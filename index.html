@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Zine</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📼</text></svg>">
+    <style>
+      section {
+        height: 4in;
+        background: #ddd;
+        position: relative;
+        overflow: hidden;
+        width: calc(25% - 1px);
+      }
+      .flipped {
+        transform: rotate(180deg);
+      }
+    </style>
+  </head>
+
+  <body style="height:8in; width:11in; display:flex; flex-wrap: wrap; background: white; gap: 1px;">
+    <section id="1" style="order:8">cover</section>
+    <section id="2" style="order:4" class="flipped">1</section>
+    <section id="3" style="order:3" class="flipped">2</section>
+    <section id="4" style="order:2" class="flipped">3</section>
+    <section id="5" style="order:1" class="flipped">4</section>
+    <section id="6" style="order:5">5</section>
+    <section id="7" style="order:6">6</section>
+    <section id="8" style="order:7">back</section>
+  </body>
+</html>
